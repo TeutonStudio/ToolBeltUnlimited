@@ -1,0 +1,75 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    id 'net.neoforged.moddev' version '2.0.78'
+}
+
+version = mod_version
+group = mod_group_id
+
+base {
+    archivesName = mod_id
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+neoForge {
+    version = neoforge_version
+
+    parchment {
+        // Optional. Leave disabled unless your project already uses Parchment.
+        // minecraftVersion = minecraft_version
+        // mappingsVersion = '2024.11.17'
+    }
+
+    runs {
+        client {
+            client()
+            gameDirectory = project.file('run')
+        }
+        server {
+            server()
+            gameDirectory = project.file('run-server')
+        }
+    }
+
+    mods {
+        toolbeltunlimited {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+repositories {
+    maven {
+        name = 'CurseMaven'
+        url = 'https://www.cursemaven.com'
+    }
+}
+
+dependencies {
+    compileOnly "curse.maven:tool-belt-260262:8001966"
+    compileOnly "curse.maven:sewing-kit-411896:5612724"
+    runtimeOnly "curse.maven:tool-belt-260262:8001966"
+    runtimeOnly "curse.maven:sewing-kit-411896:5612724"
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+processResources {
+    def props = [
+            minecraft_version: minecraft_version,
+            neoforge_version: neoforge_version,
+            mod_id: mod_id,
+            mod_name: mod_name,
+            mod_version: mod_version,
+            mod_authors: mod_authors,
+            mod_description: mod_description
+    ]
+    inputs.properties props
+    filesMatching('META-INF/neoforge.mods.toml') {
+        expand props
+    }
+}

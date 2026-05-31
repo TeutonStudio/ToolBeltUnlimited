@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "de.teutonstudio.toolbeltunlimited.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ToolBeltItemMixin",
+    "SewingUpgradeRecipeMixin",
+    "ConfigDataMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
