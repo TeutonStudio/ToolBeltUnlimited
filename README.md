@@ -35,6 +35,7 @@ Dieser Mod muss auf dem Client und Server installiert sein.
 
 - Minecraft `1.21.1`
 - NeoForge `21.1.230` oder kompatibel
+- Kotlin for Forge `5.10.0` oder kompatibel
 - Tool Belt `1.21.1-2.2.9`
 - Sewing Kit `1.21-2.0.9`
 

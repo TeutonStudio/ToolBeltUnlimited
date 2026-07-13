@@ -1,6 +1,7 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
+    id 'org.jetbrains.kotlin.jvm' version '2.2.20'
     id 'net.neoforged.moddev' version '2.0.78'
 }
 
@@ -42,16 +43,26 @@ neoForge {
 
 repositories {
     maven {
+        name = 'Kotlin for Forge'
+        url = 'https://thedarkcolour.github.io/KotlinForForge/'
+    }
+    maven {
         name = 'CurseMaven'
         url = 'https://www.cursemaven.com'
     }
 }
 
 dependencies {
+    implementation 'thedarkcolour:kotlinforforge-neoforge:5.10.0'
+
     compileOnly "curse.maven:tool-belt-260262:8001966"
     compileOnly "curse.maven:sewing-kit-411896:5612724"
     runtimeOnly "curse.maven:tool-belt-260262:8001966"
     runtimeOnly "curse.maven:sewing-kit-411896:5612724"
+}
+
+kotlin {
+    jvmToolchain(21)
 }
 
 tasks.withType(JavaCompile).configureEach {
