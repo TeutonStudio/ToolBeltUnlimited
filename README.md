@@ -47,7 +47,8 @@ Die aktuelle Version wurde im Spiel mit dem Standardlimit von 20 Slots und gui-g
 ## Build aus dem Source Code
 
 ```bash
-./gradlew build
+./gradlew clean build
+./gradlew runClient
 ```
 
 Die gebaute Jar liegt danach unter `build/libs/`.
