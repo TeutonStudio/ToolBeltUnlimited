@@ -1,0 +1,108 @@
+Tool Belt Unlimited 1.3.0 — isolated capture, 2026-11-13
+Release JAR SHA-256: 33e3839320f13e5849a1ad398857c36afa2f4b55226e9f3c1ce85f8dbe3ba9a7
+
+WIKI_VERIFIED default maxSlots=20
+WIKI_VERIFIED default allowCommonTools=true
+WIKI_VERIFIED recipe exists for 8
+WIKI_VERIFIED native recipe 8 to 9
+WIKI_VERIFIED contents retained for 8
+WIKI_VERIFIED custom name retained for 8
+WIKI_SHOT upgrade-8-to-9
+WIKI_VERIFIED recipe exists for 9
+WIKI_VERIFIED native recipe 9 to 10
+WIKI_VERIFIED contents retained for 9
+WIKI_VERIFIED custom name retained for 9
+WIKI_SHOT upgrade-9-to-10
+WIKI_SHOT contents-retained
+WIKI_VERIFIED recipe exists for 19
+WIKI_VERIFIED native recipe 19 to 20
+WIKI_VERIFIED contents retained for 19
+WIKI_VERIFIED custom name retained for 19
+WIKI_SHOT upgrade-19-to-20
+WIKI_VERIFIED cap blocks recipe at 20
+WIKI_SHOT maximum-reached
+WIKI_VERIFIED tagged tool minecraft:diamond_pickaxe
+WIKI_VERIFIED allowCommonTools=true for minecraft:diamond_pickaxe
+WIKI_VERIFIED tagged tool minecraft:diamond_axe
+WIKI_VERIFIED allowCommonTools=true for minecraft:diamond_axe
+WIKI_VERIFIED tagged tool minecraft:diamond_shovel
+WIKI_VERIFIED allowCommonTools=true for minecraft:diamond_shovel
+WIKI_VERIFIED tagged tool minecraft:diamond_hoe
+WIKI_VERIFIED allowCommonTools=true for minecraft:diamond_hoe
+WIKI_VERIFIED tagged tool minecraft:diamond_sword
+WIKI_VERIFIED allowCommonTools=true for minecraft:diamond_sword
+WIKI_VERIFIED tagged tool minecraft:shears
+WIKI_VERIFIED allowCommonTools=true for minecraft:shears
+WIKI_VERIFIED tagged tool minecraft:brush
+WIKI_VERIFIED allowCommonTools=true for minecraft:brush
+WIKI_VERIFIED tagged tool minecraft:shield
+WIKI_VERIFIED allowCommonTools=true for minecraft:shield
+WIKI_VERIFIED tagged tool minecraft:trident
+WIKI_VERIFIED allowCommonTools=true for minecraft:trident
+WIKI_VERIFIED tagged tool minecraft:bow
+WIKI_VERIFIED allowCommonTools=true for minecraft:bow
+WIKI_VERIFIED tagged tool minecraft:crossbow
+WIKI_VERIFIED allowCommonTools=true for minecraft:crossbow
+WIKI_VERIFIED tagged tool minecraft:fishing_rod
+WIKI_VERIFIED allowCommonTools=true for minecraft:fishing_rod
+WIKI_VERIFIED native slot insertion=true slot=0
+WIKI_VERIFIED native slot insertion=true slot=1
+WIKI_VERIFIED native slot insertion=true slot=2
+WIKI_VERIFIED native slot insertion=true slot=3
+WIKI_VERIFIED native slot insertion=true slot=4
+WIKI_VERIFIED native slot insertion=true slot=5
+WIKI_VERIFIED native slot insertion=true slot=6
+WIKI_VERIFIED native slot insertion=true slot=7
+WIKI_VERIFIED native slot insertion=true slot=8
+WIKI_VERIFIED native slot insertion=true slot=9
+WIKI_VERIFIED native slot insertion=true slot=10
+WIKI_VERIFIED native slot insertion=true slot=11
+WIKI_SHOT common-tools-enabled
+WIKI_VERIFIED tagged tool minecraft:diamond_pickaxe
+WIKI_VERIFIED allowCommonTools=false for minecraft:diamond_pickaxe
+WIKI_VERIFIED tagged tool minecraft:diamond_axe
+WIKI_VERIFIED allowCommonTools=false for minecraft:diamond_axe
+WIKI_VERIFIED tagged tool minecraft:diamond_shovel
+WIKI_VERIFIED allowCommonTools=false for minecraft:diamond_shovel
+WIKI_VERIFIED tagged tool minecraft:diamond_hoe
+WIKI_VERIFIED allowCommonTools=false for minecraft:diamond_hoe
+WIKI_VERIFIED tagged tool minecraft:diamond_sword
+WIKI_VERIFIED allowCommonTools=false for minecraft:diamond_sword
+WIKI_VERIFIED tagged tool minecraft:shears
+WIKI_VERIFIED allowCommonTools=false for minecraft:shears
+WIKI_VERIFIED tagged tool minecraft:brush
+WIKI_VERIFIED allowCommonTools=false for minecraft:brush
+WIKI_VERIFIED tagged tool minecraft:shield
+WIKI_VERIFIED allowCommonTools=false for minecraft:shield
+WIKI_VERIFIED tagged tool minecraft:trident
+WIKI_VERIFIED allowCommonTools=false for minecraft:trident
+WIKI_VERIFIED tagged tool minecraft:bow
+WIKI_VERIFIED allowCommonTools=false for minecraft:bow
+WIKI_VERIFIED tagged tool minecraft:crossbow
+WIKI_VERIFIED allowCommonTools=false for minecraft:crossbow
+WIKI_VERIFIED tagged tool minecraft:fishing_rod
+WIKI_VERIFIED allowCommonTools=false for minecraft:fishing_rod
+WIKI_VERIFIED native slot insertion=false slot=0
+WIKI_VERIFIED native slot insertion=false slot=1
+WIKI_VERIFIED native slot insertion=false slot=2
+WIKI_VERIFIED native slot insertion=false slot=3
+WIKI_VERIFIED native slot insertion=false slot=4
+WIKI_VERIFIED native slot insertion=false slot=5
+WIKI_VERIFIED native slot insertion=false slot=6
+WIKI_VERIFIED native slot insertion=false slot=7
+WIKI_VERIFIED native slot insertion=false slot=8
+WIKI_VERIFIED native slot insertion=false slot=9
+WIKI_VERIFIED native slot insertion=false slot=10
+WIKI_VERIFIED native slot insertion=false slot=11
+WIKI_SHOT common-tools-disabled
+WIKI_SHOT settings-default
+WIKI_VERIFIED custom cap clamps to 12
+WIKI_SHOT settings-custom
+WIKI_VERIFIED recipe exists for 11
+WIKI_VERIFIED native recipe 11 to 12
+WIKI_VERIFIED contents retained for 11
+WIKI_VERIFIED custom name retained for 11
+WIKI_SHOT upgrade-11-to-12
+WIKI_VERIFIED cap blocks recipe at 12
+WIKI_SHOT custom-maximum-reached
+WIKI_CAPTURE_COMPLETE
