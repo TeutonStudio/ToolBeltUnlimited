@@ -130,7 +130,7 @@ def main():
         check(bool(feature["sources"]), f"{fid}: missing implementation reference")
         for source in feature["sources"]:
             check(source in manifest["source_sha256"], f"{fid}: source lacks baseline hash: {source}")
-    expected = {"expanded-belt", "original-upgrades", "sewing-upgrades", "preserve-contents", "maximum-boundary", "configurable-limit", "common-tools", "tool-toggle"}
+    expected = {"expanded-belt", "original-upgrades", "sewing-upgrades", "preserve-contents", "maximum-boundary", "configurable-limit", "common-tools", "tool-toggle", "grid-rings", "scrolling-layout", "ring-configuration", "row-visibility", "rotating-rings", "direct-insertion"}
     check(feature_ids == expected, "Feature inventory incomplete or verifier needs updating")
     sources = (list((ROOT / "src/main").rglob("*.kt"))
                + list((ROOT / "src/main").rglob("*.java"))

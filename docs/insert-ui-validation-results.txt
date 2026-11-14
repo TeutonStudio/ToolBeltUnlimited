@@ -1,0 +1,38 @@
+Tool Belt Unlimited 1.5.1 — selective insertion fix, 2026-11-14
+Minecraft 1.21.1, NeoForge 21.1.230, Tool Belt 2.2.9, Sewing Kit 2.0.9, Kotlin for Forge 5.10.0, Java 21
+Disposable creative flat world, integrated server; no personal saves.
+
+Before fix (1.5.0): direct selection of empty slot 1 failed with actual=null when displayEmptySlots=false.
+
+./gradlew -I devtests/ui-validation.init.gradle -PinsertUiValidation runClient --offline
+UI_VERIFIED ring hit selects actual slot 1 (actual=1)
+UI_VERIFIED insertion empties hand for selected slot 1
+UI_VERIFIED server inserts original item into exact slot 1
+UI_VERIFIED insertion preserves occupied slot 0
+UI_VERIFIED insertion creates no duplicate items
+UI_VERIFIED empty hand still respects hidden empty slots
+UI_VERIFIED ring hit selects actual slot 10 (actual=10)
+UI_VERIFIED insertion empties hand for selected slot 10
+UI_VERIFIED server inserts original item into exact slot 10
+UI_VERIFIED insertion preserves occupied slot 0
+UI_VERIFIED insertion creates no duplicate items
+UI_VERIFIED center insert remains available with held item
+UI_VERIFIED insertion empties hand for selected slot 1
+UI_VERIFIED server inserts original item into exact slot 1
+UI_VERIFIED insertion preserves occupied slot 0
+UI_VERIFIED insertion creates no duplicate items
+UI_VERIFIED ring hit selects actual slot 9 (actual=9)
+UI_VERIFIED occupied-slot swap still returns old tool
+UI_VERIFIED occupied-slot swap stores held item
+UI_VERIFIED full belt has no center insert action
+UI_VERIFIED ring hit selects actual slot 13 (actual=13)
+UI_VERIFIED insertion empties hand for selected slot 13
+UI_VERIFIED server inserts original item into exact slot 13
+UI_VERIFIED insertion preserves occupied slot 0
+UI_VERIFIED insertion creates no duplicate items
+INSERT_UI_VALIDATION_COMPLETE
+UI_VALIDATION_COMPLETE
+
+./gradlew build --offline: BUILD SUCCESSFUL
+Validation fixture excluded from JAR.
+JAR SHA-256: 07b9f1a0536dd9c2d54030a1994da2b948b21ca7f3bddc1d6c99b631ba858c84

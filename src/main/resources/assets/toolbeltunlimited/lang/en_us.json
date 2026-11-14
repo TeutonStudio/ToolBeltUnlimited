@@ -1,0 +1,14 @@
+{
+  "text.toolbeltunlimited.row_ring": "Row %s = ring %s",
+  "text.toolbeltunlimited.rings": "Rings %s–%s / %s",
+  "text.toolbeltunlimited.scroll": "Scroll: more rows / rings",
+  "text.toolbeltunlimited.hide_row": "Hide row %s from ring selection",
+  "text.toolbeltunlimited.show_row": "Show row %s in ring selection",
+  "text.toolbeltunlimited.rings_visible": "Rings: %s",
+  "text.toolbeltunlimited.no_rings": "No visible rings",
+  "text.toolbeltunlimited.all_hidden": "Hidden",
+  "text.toolbeltunlimited.scroll_columns": "Scroll: rows · Shift+scroll: columns",
+  "toolbeltunlimited.configuration.itemsPerRing": "Slots per ring / inventory row",
+  "toolbeltunlimited.configuration.useRings": "Use ring menu",
+  "toolbeltunlimited.configuration.maxVisibleRings": "Maximum visible rings"
+}

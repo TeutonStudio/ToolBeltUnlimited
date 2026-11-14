@@ -6,7 +6,7 @@ Tool Belt Unlimited erweitert den Werkzeuggürtel von Tool Belt über neun Plät
 
 ![Tool-Belt-Auswahlrad mit 14 Werkzeugen](https://raw.githubusercontent.com/wiki/TeutonStudio/ToolBeltUnlimited/assets/screenshots/wiki-radial-14.png)
 
-*Vorhandene Spielaufnahme: 14 Werkzeuge im Auswahlrad von Tool Belt. Das Addon erweitert die Kapazität; das Auswahlrad stammt von Tool Belt.*
+*Historische Spielaufnahme: 14 Werkzeuge im früheren Auswahlrad von Tool Belt. Ab 1.4.0 ergänzt das Addon ein Inventarraster und passende Ringebenen; siehe [Werkzeuggürtel verwenden](Werkzeugguertel).*
 
 ## Anleitungen
 

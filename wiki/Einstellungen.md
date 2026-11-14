@@ -2,7 +2,7 @@
 
 **Deutsch** · [English](Einstellungen-en) · [Tool Belt Unlimited](Home)
 
-Die Einstellungen sind serverseitig und werden für die Sitzung an Clients übertragen. Im Einzelspieler übernimmt der integrierte Server diese Rolle.
+Kapazität, Werkzeugfreigabe und Plätze pro Ring sind serverseitig und werden an Clients übertragen. Ringmodus und Sichtlimit gehören zur lokalen Client-Konfiguration. Im Einzelspieler übernimmt der integrierte Server die Serverrolle.
 
 ![Servereinstellungen mit den Standardwerten true und 20](https://raw.githubusercontent.com/wiki/TeutonStudio/ToolBeltUnlimited/assets/screenshots/wiki-settings-default.png)
 
@@ -12,8 +12,43 @@ Die Einstellungen sind serverseitig und werden für die Sitzung an Clients über
 | --- | --- | --- |
 | `maxSlots` | `20` | Maximale Gürtelplätze; gültiger Bereich `9` bis `2147483647`. |
 | `allowCommonTools` | `true` | Zusätzliche Freigabe für `#c:tools`; mit `false` gelten nur die ursprünglichen Regeln. |
+| `itemsPerRing` | `9` | Plätze pro Inventarzeile und Ring, Bereich `1`–`24`. Gruppiert vorhandene Plätze neu, ohne ihre Anzahl oder ihren Inhalt zu ändern. |
 
 Der große zulässige Zahlenbereich ist eine technische Eingabegrenze, keine Zusage für Spielbarkeit oder Leistung bei extremen Werten. Ein Gürtel erhält durch Erhöhen des Limits keine Plätze automatisch.
+
+## Ringanzeige ab 1.5.0
+
+Die Datei **`config/toolbeltunlimited-client.toml`** gilt nur für den jeweiligen Client. In NeoForge findest du die Optionen unter **Tool Belt Unlimited → Client**.
+
+| Schlüssel | Standard | Bedeutung |
+| --- | --- | --- |
+| `useRings` | `true` | Mehrere Ringebenen verwenden. `false` stellt das ursprüngliche einzelne Tool-Belt-Auswahlrad wieder her. |
+| `maxVisibleRings` | `3` | Gleichzeitig sichtbare Ringe, Bereich `1`–`16`; auf kleinen Bildschirmen können es weniger sein. |
+
+```toml
+useRings = true
+maxVisibleRings = 3
+```
+
+Die Serverdatei ergänzt:
+
+```toml
+itemsPerRing = 9
+```
+
+![Sechs Plätze pro Zeile mit Augen für die Ringauswahl](https://raw.githubusercontent.com/wiki/TeutonStudio/ToolBeltUnlimited/assets/screenshots/config-grid-six-eyes.png)
+
+*Testwert `itemsPerRing = 6`: 30 Plätze ergeben fünf Zeilen. Das geschlossene Auge blendet die zweite Zeile nur aus der Ringauswahl aus.*
+
+![Nur ein sichtbarer Ring](https://raw.githubusercontent.com/wiki/TeutonStudio/ToolBeltUnlimited/assets/screenshots/config-rings-limit-one.png)
+
+*Testwert `maxVisibleRings = 1`; weitere aktivierte Zeilen sind per Mausrad erreichbar.*
+
+![Ursprüngliches einzelnes Auswahlrad](https://raw.githubusercontent.com/wiki/TeutonStudio/ToolBeltUnlimited/assets/screenshots/config-native-single-ring.png)
+
+*`useRings = false`: ursprüngliches Auswahlrad. Die Augenfilter gelten für den Ringmodus; im ursprünglichen Rad sind alle Plätze wieder verfügbar.*
+
+Das Auge speichert seine Auswahl pro Gürtel und übersteht Speichern sowie Upgrades. Eine Änderung von `itemsPerRing` gruppiert die Plätze neu; ausgeblendete Zeilennummern behalten ihre Nummer. Bei breiten Zeilen auf kleinen Bildschirmen verschiebt **Umschalt + Mausrad** die sichtbaren Spalten im Inventar.
 
 ## Datei und Oberfläche
 

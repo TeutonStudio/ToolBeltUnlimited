@@ -6,7 +6,7 @@ Tool Belt Unlimited expands Tool Belt beyond nine slots. The default limit is **
 
 ![Tool Belt radial menu containing 14 tools](https://raw.githubusercontent.com/wiki/TeutonStudio/ToolBeltUnlimited/assets/screenshots/wiki-radial-14.png)
 
-*Existing in-game capture: 14 tools in Tool Belt's radial menu. The addon expands capacity; Tool Belt provides the menu itself.*
+*Historical in-game capture: 14 tools in the earlier Tool Belt radial menu. Since 1.4.0 the addon supplies an inventory grid and matching ring layers; see [Using the belt](Werkzeugguertel-en).*
 
 ## Guides
 

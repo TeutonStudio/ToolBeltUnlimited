@@ -1,0 +1,14 @@
+{
+  "text.toolbeltunlimited.row_ring": "Zeile %s = Ring %s",
+  "text.toolbeltunlimited.rings": "Ringe %s–%s / %s",
+  "text.toolbeltunlimited.scroll": "Mausrad: weitere Zeilen / Ringe",
+  "text.toolbeltunlimited.hide_row": "Zeile %s aus der Ringauswahl ausblenden",
+  "text.toolbeltunlimited.show_row": "Zeile %s in der Ringauswahl einblenden",
+  "text.toolbeltunlimited.rings_visible": "Ringe: %s",
+  "text.toolbeltunlimited.no_rings": "Keine Ringe sichtbar",
+  "text.toolbeltunlimited.all_hidden": "Ausgeblendet",
+  "text.toolbeltunlimited.scroll_columns": "Mausrad: Zeilen · Umschalt+Mausrad: Spalten",
+  "toolbeltunlimited.configuration.itemsPerRing": "Plätze pro Ring / Inventarzeile",
+  "toolbeltunlimited.configuration.useRings": "Ringmenü verwenden",
+  "toolbeltunlimited.configuration.maxVisibleRings": "Maximal sichtbare Ringe"
+}

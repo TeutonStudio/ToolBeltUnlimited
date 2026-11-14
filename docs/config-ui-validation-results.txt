@@ -1,0 +1,43 @@
+Tool Belt Unlimited 1.5.0 — config / eyes validation, 2026-11-14
+Minecraft 1.21.1, NeoForge 21.1.230, Tool Belt 2.2.9, Sewing Kit 2.0.9, Kotlin for Forge 5.10.0, Java 21
+Disposable creative flat world, integrated server, no personal saves.
+
+./gradlew -I devtests/ui-validation.init.gradle -PconfigUiValidation runClient --offline
+UI_VERIFIED configured six-slot rows and rings
+UI_VERIFIED one eye button per inventory row
+UI_VERIFIED second row starts at slot 6
+UI_VERIFIED eye packet hides only row 2 on server
+UI_VERIFIED eye preserves unrelated custom data
+UI_VERIFIED hidden inventory contents remain intact
+UI_VERIFIED hidden rows survive belt upgrade
+UI_VERIFIED hidden rows survive item serialization
+UI_VERIFIED invalid eye packet rows rejected
+UI_VERIFIED server eye state synchronized to client
+UI_VERIFIED eye state retained when inventory reopened
+UI_VERIFIED maxVisibleRings=2 enforced
+UI_VERIFIED ring hit selects actual slot 0 (actual=0)
+UI_VERIFIED ring hit selects actual slot 12 (actual=12)
+UI_VERIFIED ring hit selects actual slot 12 (actual=12)
+UI_VERIFIED ring hit selects actual slot 18 (actual=18)
+UI_VERIFIED ring hit selects actual slot 0 (actual=0)
+UI_VERIFIED ring hit selects actual slot 24 (actual=24)
+UI_VERIFIED ring hit selects actual slot 0 (actual=0)
+UI_VERIFIED ring hit selects actual slot 12 (actual=12)
+UI_VERIFIED maxVisibleRings=1 enforced
+UI_VERIFIED ring hit selects actual slot 18 (actual=18)
+UI_VERIFIED useRings=false restores native single ring
+UI_VERIFIED ring wheel handler disabled with native menu
+UI_VERIFIED ring hit selects actual slot 6 (actual=6)
+UI_VERIFIED ring mode can be re-enabled
+UI_VERIFIED all hidden rows produce no selection rings
+UI_VERIFIED keyboard cannot select hidden rows
+UI_VERIFIED 24-slot rows retain grouping
+UI_VERIFIED wide row horizontal scrolling reaches last column
+UI_VERIFIED one-slot rows supported
+CONFIG_UI_VALIDATION_COMPLETE
+UI_VALIDATION_COMPLETE
+
+RingWindowTest: RING_WINDOW_TESTS_PASSED
+
+./gradlew build --offline: BUILD SUCCESSFUL
+JAR SHA-256: 1c87f0e27f4dd345c3eb0728163cdd256bf6619af9f34f57249f93aeab911ca1

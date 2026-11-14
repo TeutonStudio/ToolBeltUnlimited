@@ -2,7 +2,7 @@
 
 [Deutsch](Einstellungen) · **English** · [Tool Belt Unlimited](English)
 
-Settings belong to the server and are synchronized to clients for the session. In singleplayer, the integrated server fills this role.
+Capacity, tool permissions and slots per ring belong to the server and are synchronized to clients. Ring mode and its visible-ring limit are local client settings. In singleplayer, the integrated server supplies the server settings.
 
 ![Server settings showing the default values true and 20](https://raw.githubusercontent.com/wiki/TeutonStudio/ToolBeltUnlimited/assets/screenshots/wiki-settings-default.png)
 
@@ -12,8 +12,43 @@ Settings belong to the server and are synchronized to clients for the session. I
 | --- | --- | --- |
 | `maxSlots` | `20` | Maximum belt slots; accepted range `9` to `2147483647`. |
 | `allowCommonTools` | `true` | Extra permission for `#c:tools`; `false` uses only the original rules. |
+| `itemsPerRing` | `9` | Slots per inventory row and ring, range `1`–`24`. Regroups existing slots without changing capacity or contents. |
 
 The large numeric range is an input bound, not a promise of usability or performance at extreme values. Increasing the limit does not automatically upgrade belts.
+
+## Ring display since 1.5.0
+
+**`config/toolbeltunlimited-client.toml`** applies only to the local client. Open **Tool Belt Unlimited → Client** in NeoForge to edit these options.
+
+| Key | Default | Meaning |
+| --- | --- | --- |
+| `useRings` | `true` | Use multiple ring layers. `false` restores Tool Belt's original single radial menu. |
+| `maxVisibleRings` | `3` | Simultaneously visible rings, range `1`–`16`; smaller screens may fit fewer. |
+
+```toml
+useRings = true
+maxVisibleRings = 3
+```
+
+The server file adds:
+
+```toml
+itemsPerRing = 9
+```
+
+![Six slots per row and row visibility eyes](https://raw.githubusercontent.com/wiki/TeutonStudio/ToolBeltUnlimited/assets/screenshots/config-grid-six-eyes.png)
+
+*Test value `itemsPerRing = 6`: thirty slots become five rows. The closed eye hides row two from ring selection only.*
+
+![Only one visible ring](https://raw.githubusercontent.com/wiki/TeutonStudio/ToolBeltUnlimited/assets/screenshots/config-rings-limit-one.png)
+
+*Test value `maxVisibleRings = 1`; use the mouse wheel to reach further enabled rows.*
+
+![Original single radial menu](https://raw.githubusercontent.com/wiki/TeutonStudio/ToolBeltUnlimited/assets/screenshots/config-native-single-ring.png)
+
+*`useRings = false`: the original radial menu. Eyes filter ring mode; all slots are available in the original menu.*
+
+Eye preferences are saved per belt and survive saving and upgrades. Changing `itemsPerRing` regroups slots; hidden row numbers keep their numbers. On small screens with wide rows, **Shift + mouse wheel** scrolls inventory columns horizontally.
 
 ## File and interface
 

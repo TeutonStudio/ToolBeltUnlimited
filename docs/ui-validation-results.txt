@@ -1,0 +1,54 @@
+Tool Belt Unlimited 1.5.0 — standard UI regression, 2026-11-14
+Minecraft 1.21.1, NeoForge 21.1.230, Tool Belt 2.2.9, Sewing Kit 2.0.9, Kotlin for Forge 5.10.0, Java 21
+Disposable creative flat world with integrated server.
+
+./gradlew -I devtests/ui-validation.init.gradle runClient --offline
+UI_VERIFIED 1000 slot angle round trips
+UI_VERIFIED row count avoids overflow
+UI_VERIFIED grid screen for 20 slots
+UI_VERIFIED grid preserves slot count 20
+UI_VERIFIED player inventory below belt rows
+UI_VERIFIED server grid agrees
+UI_VERIFIED held belt remains locked
+UI_VERIFIED client picks last grid slot
+UI_VERIFIED server picks same slot
+UI_VERIFIED shift click belt to player inventory
+UI_VERIFIED shift click player to belt
+UI_VERIFIED grid screen for 2 slots
+UI_VERIFIED grid preserves slot count 2
+UI_VERIFIED player inventory below belt rows
+UI_VERIFIED server grid agrees
+UI_VERIFIED held belt remains locked
+UI_VERIFIED grid screen for 9 slots
+UI_VERIFIED grid preserves slot count 9
+UI_VERIFIED player inventory below belt rows
+UI_VERIFIED server grid agrees
+UI_VERIFIED held belt remains locked
+UI_VERIFIED grid screen for 10 slots
+UI_VERIFIED grid preserves slot count 10
+UI_VERIFIED player inventory below belt rows
+UI_VERIFIED server grid agrees
+UI_VERIFIED held belt remains locked
+UI_VERIFIED grid scroll reaches last row and hides first
+UI_VERIFIED ring hit selects actual slot 0 (actual=0)
+UI_VERIFIED hidden empty slots keep their angular gap
+UI_VERIFIED ring hit selects actual slot 9 (actual=9)
+UI_VERIFIED ring hit selects actual slot 18 (actual=18)
+UI_VERIFIED ring hit selects actual slot 19 (actual=19)
+UI_VERIFIED mouse click packet swaps actual slot 19
+UI_VERIFIED ring hit selects actual slot 10 (actual=10)
+UI_VERIFIED ring hit selects actual slot 18 (actual=18)
+UI_VERIFIED key release packet swaps actual slot 18
+UI_VERIFIED ring hit selects actual slot 81 (actual=81)
+UI_VERIFIED ring hit selects actual slot 82 (actual=82)
+UI_VERIFIED ring hit selects actual slot 89 (actual=89)
+UI_VERIFIED ring hit selects actual slot 62 (actual=62)
+UI_VERIFIED ring hit selects actual slot 54 (actual=54)
+UI_VERIFIED center insert action remains selectable
+UI_VERIFIED center action inserts held tool
+UI_VERIFIED center insert uses first empty slot
+UI_VALIDATION_COMPLETE
+
+./gradlew build --offline: BUILD SUCCESSFUL
+Validation fixture excluded from JAR.
+JAR SHA-256: 1c87f0e27f4dd345c3eb0728163cdd256bf6619af9f34f57249f93aeab911ca1

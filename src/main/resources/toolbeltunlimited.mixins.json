@@ -6,9 +6,14 @@
   "mixins": [
     "ToolBeltItemMixin",
     "SewingUpgradeRecipeMixin",
-    "ConfigDataMixin"
+    "ConfigDataMixin",
+    "SlotMixin",
+    "BeltContainerMixin"
   ],
-  "client": [],
+  "client": [
+    "client.GenericRadialMenuMixin",
+    "client.RadialMenuScreenMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   }

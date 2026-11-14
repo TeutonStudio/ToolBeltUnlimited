@@ -16,6 +16,7 @@ class ToolBeltUnlimited(modBus: IEventBus, modContainer: ModContainer) {
     init {
         RECIPE_SERIALIZERS.register(modBus)
         modContainer.registerConfig(ModConfig.Type.SERVER, ToolBeltUnlimitedConfig.SPEC)
+        modContainer.registerConfig(ModConfig.Type.CLIENT, ToolBeltUnlimitedClientConfig.SPEC)
     }
 
     companion object {

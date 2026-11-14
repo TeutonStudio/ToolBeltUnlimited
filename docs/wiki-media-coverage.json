@@ -1,7 +1,6 @@
 {
-  "mod_version": "1.3.0",
-  "review_date": "2026-11-13",
-  "release_jar_sha256": "33e3839320f13e5849a1ad398857c36afa2f4b55226e9f3c1ce85f8dbe3ba9a7",
+  "mod_version": "1.5.1",
+  "review_date": "2026-11-14",
   "language_pairs": [
     [
       "Home",
@@ -172,6 +171,150 @@
       "capture": "minecraft-screenshot-api-2026-11-13",
       "scope_de": "Kein zusätzliches Rezept bei zwölf Plätzen und maxSlots 12.",
       "scope_en": "No added recipe at twelve slots with maxSlots 12."
+    },
+    "assets/screenshots/grid-20.png": {
+      "sha256": "6114c7120f668e41f611eb12133e90c623a0d721bb2c347b9179f194ec828551",
+      "dimensions": [
+        1280,
+        800
+      ],
+      "origin": "build/ui-validation-run/screenshots/grid-20.png",
+      "capture": "minecraft-screenshot-api-2026-11-14",
+      "mod_version": "1.4.0-local-development",
+      "scope_de": "Gürtel mit 20 Plätzen in drei Rasterzeilen; lokaler Entwicklungsstand 1.4.0, GUI-Größe 2.",
+      "scope_en": "Twenty-slot belt in three grid rows; local 1.4.0 development build, GUI scale 2."
+    },
+    "assets/screenshots/rings-20-sparse.png": {
+      "sha256": "0c907a2605c2dbd6aebe4664612eca8768537ba614385c420d79756e54e19af7",
+      "dimensions": [
+        1280,
+        800
+      ],
+      "origin": "build/ui-validation-run/screenshots/rings-20-sparse.png",
+      "capture": "minecraft-screenshot-api-2026-11-14",
+      "mod_version": "1.4.0-local-development",
+      "scope_de": "Drei Ringebenen mit Werkzeugen auf Plätzen 1, 10, 19 und 20; ausgeblendete Leerplätze behalten ihren Winkel.",
+      "scope_en": "Three ring layers with tools in slots 1, 10, 19 and 20; hidden empty slots retain their angles."
+    },
+    "assets/screenshots/rings-20-empty-slots.png": {
+      "sha256": "c16853e4f4037eb1de739af31e5a13c7d6034171f1aaf52cc4dfd833483bb38a",
+      "dimensions": [
+        1280,
+        800
+      ],
+      "origin": "build/ui-validation-run/screenshots/rings-20-empty-slots.png",
+      "capture": "minecraft-screenshot-api-2026-11-14",
+      "mod_version": "1.4.0-local-development",
+      "scope_de": "Leerer Platz in Zeile 2, Spalte 2 ausgewählt; native Leerplatzanzeige eingeschaltet.",
+      "scope_en": "Empty slot in row 2, column 2 selected with the native display-empty-slots option enabled."
+    },
+    "assets/screenshots/grid-90-scrolled.png": {
+      "sha256": "a070d18a4df160603965ac53cef20e5e651db644467b6ccd45c52e614eacfe25",
+      "dimensions": [
+        1280,
+        800
+      ],
+      "origin": "build/ui-validation-run/screenshots/grid-90-scrolled.png",
+      "capture": "minecraft-screenshot-api-2026-11-14",
+      "mod_version": "1.4.0-local-development",
+      "scope_de": "Vorbereiteter 90-Platz-Gürtel, bis zur letzten Rasterzeile gescrollt; GUI-Größe 4 angefordert, Minecraft begrenzt die tatsächliche Skalierung.",
+      "scope_en": "Prepared ninety-slot belt scrolled to the last grid row; GUI scale 4 requested, Minecraft limits the actual scaling."
+    },
+    "assets/screenshots/rings-90-scrolled.png": {
+      "sha256": "13b9522af26a3915110c7ac72c2a4909354f908dc2d2285cac29213c771e93f7",
+      "dimensions": [
+        1280,
+        800
+      ],
+      "origin": "build/ui-validation-run/screenshots/rings-90-scrolled.png",
+      "capture": "minecraft-screenshot-api-2026-11-14",
+      "mod_version": "1.4.0-local-development",
+      "scope_de": "Vorbereiteter 90-Platz-Gürtel, letzte Ringebenen einschließlich Ring 10; integrierter Server, GUI-Größe 4 angefordert.",
+      "scope_en": "Prepared ninety-slot belt, final ring layers including ring 10; integrated server, GUI scale 4 requested."
+    },
+    "assets/screenshots/config-grid-six-eyes.png": {
+      "sha256": "d9aba68988b8e6abe46457c0a179dd7bbcb27a8c6a98631494b54c503911d1b4",
+      "dimensions": [
+        1280,
+        800
+      ],
+      "origin": "build/ui-validation-run/screenshots/config-grid-six-eyes.png",
+      "capture": "minecraft-screenshot-api-2026-11-14",
+      "mod_version": "1.5.0-local-development",
+      "scope_de": "Lokaler Stand 1.5.0: itemsPerRing 6, 30 Plätze in fünf Zeilen; zweite Zeile über ihr Auge ausgeblendet.",
+      "scope_en": "Local 1.5.0 build: itemsPerRing 6, thirty slots in five rows; second row hidden using its eye."
+    },
+    "assets/screenshots/config-rings-skip-row.png": {
+      "sha256": "1b82fe226f614af9eab3596c743e4731b5d5f8fc9a7d5db07eafca65a0f47513",
+      "dimensions": [
+        1280,
+        800
+      ],
+      "origin": "build/ui-validation-run/screenshots/config-rings-skip-row.png",
+      "capture": "minecraft-screenshot-api-2026-11-14",
+      "mod_version": "1.5.0-local-development",
+      "scope_de": "Maximal zwei sichtbare Ringe; aktivierte Zeilen 1 und 3, Zeile 2 ausgeblendet.",
+      "scope_en": "At most two visible rings, enabled rows 1 and 3; row 2 hidden."
+    },
+    "assets/screenshots/config-rings-shift-inward.png": {
+      "sha256": "2e93fd01a5a55f2ffb8a6d3056b0b9c3a5ccb0fd92ab1fd4c77482a209f09504",
+      "dimensions": [
+        1280,
+        800
+      ],
+      "origin": "build/ui-validation-run/screenshots/config-rings-shift-inward.png",
+      "capture": "minecraft-screenshot-api-2026-11-14",
+      "mod_version": "1.5.0-local-development",
+      "scope_de": "Nach einem Schritt nach unten: bisheriger äußerer Ring innen, nächste aktivierte Zeile außen.",
+      "scope_en": "After one downward scroll step: previous outer ring moves inside and next enabled row appears outside."
+    },
+    "assets/screenshots/config-rings-wrapped.png": {
+      "sha256": "4dca311ba8e3a5f8843903c803b2cd3ffafc0f0fe12d9df6deff7d92b192502c",
+      "dimensions": [
+        1280,
+        800
+      ],
+      "origin": "build/ui-validation-run/screenshots/config-rings-wrapped.png",
+      "capture": "minecraft-screenshot-api-2026-11-14",
+      "mod_version": "1.5.0-local-development",
+      "scope_de": "Zyklischer Übergang mit sichtbaren Zeilen 5 und 1.",
+      "scope_en": "Cyclic wrap with rows 5 and 1 visible."
+    },
+    "assets/screenshots/config-rings-limit-one.png": {
+      "sha256": "d8b022e2aa6d75b348fd22413d480114a073805f8f6368cea866c42e42122b1d",
+      "dimensions": [
+        1280,
+        800
+      ],
+      "origin": "build/ui-validation-run/screenshots/config-rings-limit-one.png",
+      "capture": "minecraft-screenshot-api-2026-11-14",
+      "mod_version": "1.5.0-local-development",
+      "scope_de": "maxVisibleRings 1: genau eine Ringebene sichtbar.",
+      "scope_en": "maxVisibleRings 1: exactly one ring layer visible."
+    },
+    "assets/screenshots/config-native-single-ring.png": {
+      "sha256": "7234c140daacb8c5b8e4157f74b2762b1b935a6cbaae3592744dd3e14c0a16c1",
+      "dimensions": [
+        1280,
+        800
+      ],
+      "origin": "build/ui-validation-run/screenshots/config-native-single-ring.png",
+      "capture": "minecraft-screenshot-api-2026-11-14",
+      "mod_version": "1.5.0-local-development",
+      "scope_de": "useRings false: ursprüngliches Tool-Belt-Auswahlrad mit allen 30 Plätzen, auch der im Ringmodus ausgeblendeten Zeile.",
+      "scope_en": "useRings false: original Tool Belt radial menu with all thirty slots, including the row hidden in ring mode."
+    },
+    "assets/screenshots/insert-empty-slot-selected.png": {
+      "sha256": "da3eaf99171a7d8b8f90137aa7d443dfcd9cb8f8361568eeaac1540162c04c43",
+      "dimensions": [
+        1280,
+        800
+      ],
+      "origin": "build/ui-validation-run/screenshots/insert-empty-slot-selected.png",
+      "capture": "minecraft-screenshot-api-2026-11-14",
+      "mod_version": "1.5.1-local-development",
+      "scope_de": "Stand 1.5.1: gehaltenes Item und ausgewählter leerer Slot bei ausgeschalteter Leerplatzanzeige; gezieltes Einfügen durch Serverergebnis bestätigt.",
+      "scope_en": "Build 1.5.1: held item and selected empty slot with empty-slot display disabled; direct insertion verified by actual server results."
     }
   },
   "features": [
@@ -307,19 +450,157 @@
         "src/main/kotlin/de/teutonstudio/toolbeltunlimited/mixin/ConfigDataMixin.kt",
         "src/main/kotlin/de/teutonstudio/toolbeltunlimited/ToolBeltUnlimitedConfig.kt"
       ]
+    },
+    {
+      "id": "grid-rings",
+      "title_de": "Neunspaltiges Raster mit genau einem Ring pro Zeile",
+      "pages": [
+        "Werkzeugguertel",
+        "Werkzeugguertel-en"
+      ],
+      "images": [
+        "assets/screenshots/grid-20.png",
+        "assets/screenshots/rings-20-sparse.png",
+        "assets/screenshots/rings-20-empty-slots.png"
+      ],
+      "status": "shown",
+      "sources": [
+        "src/main/java/de/teutonstudio/toolbeltunlimited/BeltLayout.java",
+        "src/main/java/de/teutonstudio/toolbeltunlimited/mixin/BeltContainerMixin.java",
+        "src/main/java/de/teutonstudio/toolbeltunlimited/client/BeltGridScreen.java",
+        "src/main/java/de/teutonstudio/toolbeltunlimited/client/ClientScreens.java",
+        "src/main/java/de/teutonstudio/toolbeltunlimited/client/BeltRingMenu.java",
+        "src/main/java/de/teutonstudio/toolbeltunlimited/mixin/client/GenericRadialMenuMixin.java"
+      ]
+    },
+    {
+      "id": "scrolling-layout",
+      "title_de": "Zusätzliche Rasterzeilen und Ringebenen per Mausrad erreichen",
+      "pages": [
+        "Werkzeugguertel",
+        "Werkzeugguertel-en"
+      ],
+      "images": [
+        "assets/screenshots/grid-90-scrolled.png",
+        "assets/screenshots/rings-90-scrolled.png"
+      ],
+      "status": "shown",
+      "sources": [
+        "src/main/java/de/teutonstudio/toolbeltunlimited/SlotLayoutAccess.java",
+        "src/main/java/de/teutonstudio/toolbeltunlimited/mixin/SlotMixin.java",
+        "src/main/java/de/teutonstudio/toolbeltunlimited/client/BeltGridScreen.java",
+        "src/main/java/de/teutonstudio/toolbeltunlimited/client/RingMenuAccess.java",
+        "src/main/java/de/teutonstudio/toolbeltunlimited/client/BeltRingMenu.java",
+        "src/main/java/de/teutonstudio/toolbeltunlimited/mixin/client/RadialMenuScreenMixin.java"
+      ]
+    },
+    {
+      "id": "ring-configuration",
+      "title_de": "Konfigurierbare Ringplätze, Ringmodus und Sichtlimit",
+      "pages": [
+        "Einstellungen",
+        "Einstellungen-en"
+      ],
+      "images": [
+        "assets/screenshots/config-grid-six-eyes.png",
+        "assets/screenshots/config-rings-limit-one.png",
+        "assets/screenshots/config-native-single-ring.png"
+      ],
+      "status": "shown",
+      "sources": [
+        "src/main/java/de/teutonstudio/toolbeltunlimited/ToolBeltUnlimitedClientConfig.java",
+        "src/main/kotlin/de/teutonstudio/toolbeltunlimited/ToolBeltUnlimitedConfig.kt",
+        "src/main/java/de/teutonstudio/toolbeltunlimited/BeltLayout.java"
+      ]
+    },
+    {
+      "id": "row-visibility",
+      "title_de": "Pro Gürtel gespeicherte Zeilenauswahl über Augen",
+      "pages": [
+        "Werkzeugguertel",
+        "Werkzeugguertel-en"
+      ],
+      "images": [
+        "assets/screenshots/config-grid-six-eyes.png",
+        "assets/screenshots/config-rings-skip-row.png"
+      ],
+      "status": "shown",
+      "sources": [
+        "src/main/java/de/teutonstudio/toolbeltunlimited/BeltRows.java",
+        "src/main/java/de/teutonstudio/toolbeltunlimited/BeltMenuAccess.java",
+        "src/main/java/de/teutonstudio/toolbeltunlimited/client/RowEyeButton.java",
+        "src/main/java/de/teutonstudio/toolbeltunlimited/client/BeltSelectionAccess.java",
+        "src/main/java/de/teutonstudio/toolbeltunlimited/mixin/BeltContainerMixin.java"
+      ]
+    },
+    {
+      "id": "rotating-rings",
+      "title_de": "Zyklisch verschobene Ringebenen überspringen ausgeblendete Zeilen",
+      "pages": [
+        "Werkzeugguertel",
+        "Werkzeugguertel-en"
+      ],
+      "images": [
+        "assets/screenshots/config-rings-shift-inward.png",
+        "assets/screenshots/config-rings-wrapped.png"
+      ],
+      "status": "shown",
+      "sources": [
+        "src/main/java/de/teutonstudio/toolbeltunlimited/client/RingWindow.java",
+        "src/main/java/de/teutonstudio/toolbeltunlimited/client/BeltRingMenu.java"
+      ]
+    },
+    {
+      "id": "direct-insertion",
+      "title_de": "Selektives Einfügen in leere Ringplätze auch ohne Leerplatzanzeige",
+      "pages": [
+        "Werkzeugguertel",
+        "Werkzeugguertel-en"
+      ],
+      "images": [
+        "assets/screenshots/insert-empty-slot-selected.png"
+      ],
+      "status": "shown",
+      "sources": [
+        "src/main/java/de/teutonstudio/toolbeltunlimited/mixin/client/RadialMenuScreenMixin.java"
+      ]
     }
   ],
   "source_sha256": {
     "build.gradle": "87cde7204248ab142d894147629b7b9362f1f13d7f3ded8fa370aefa73476e49",
-    "gradle.properties": "144387411c5c1edb6263523899e107c46745ed992b019bebf286ad8e1c05705b",
-    "src/main/kotlin/de/teutonstudio/toolbeltunlimited/ToolBeltUnlimited.kt": "21d3b8af48d42d48bd923f86701096da1b80a7b43ce65b0d84b4345dbd6c9c15",
-    "src/main/kotlin/de/teutonstudio/toolbeltunlimited/ToolBeltUnlimitedConfig.kt": "eebb0a96218406748b70e99adc79402844066edc14ca81e16b31a1d99ec38f9a",
+    "gradle.properties": "3647b2eea1c48de0881ee53f9e43aa3e7f856e0328a63c3278a2669a765f6b4b",
+    "src/main/java/de/teutonstudio/toolbeltunlimited/BeltLayout.java": "6ffbf65844bebb24d2125f51b72ec792bde16f4d13348a17cd5ab3b9d0323cb5",
+    "src/main/java/de/teutonstudio/toolbeltunlimited/BeltMenuAccess.java": "412dbef597e0d870d7febd7403ddacec882d155b400bca95c33488914cb72802",
+    "src/main/java/de/teutonstudio/toolbeltunlimited/BeltRows.java": "05f43c520a3904a9126449135f409b43e43a92671a8a919cdb5331fdec87e355",
+    "src/main/java/de/teutonstudio/toolbeltunlimited/SlotLayoutAccess.java": "9602c53cd8cb6d98e7ced6e452d575c2742314d7b0be6d3e39f15ee53253da4e",
+    "src/main/java/de/teutonstudio/toolbeltunlimited/ToolBeltUnlimitedClientConfig.java": "90432f61be82c30a20a1fe27b99a031fd64608a80bec3ea3188b25cb196abbd5",
+    "src/main/java/de/teutonstudio/toolbeltunlimited/client/BeltGridScreen.java": "14d78dd954bc078797e565f7d94a68ac8746605920176aeb8aa3a1c944ed7202",
+    "src/main/java/de/teutonstudio/toolbeltunlimited/client/BeltRingMenu.java": "4d73c92f99346e9ec0c48b385303a5d9ae3985089bce21a906be24886f1d11ff",
+    "src/main/java/de/teutonstudio/toolbeltunlimited/client/BeltSelectionAccess.java": "ddb727da347a211e59fc5517ce4899f826d491fee7f2fdc94d93549fbcf73eda",
+    "src/main/java/de/teutonstudio/toolbeltunlimited/client/ClientScreens.java": "33e86e9d310c5bb630921a7ace12472cc183b589ef0d38c24e4e64319229e43c",
+    "src/main/java/de/teutonstudio/toolbeltunlimited/client/RingMenuAccess.java": "9a9b1a5e6662d4cc4c9a4312b50143825a38c538ad81cafa434dbf9b3b96379c",
+    "src/main/java/de/teutonstudio/toolbeltunlimited/client/RingWindow.java": "ec48a27d901f176e0f21b19274b848353c074a64a42ce3e6ae38cde984bbb802",
+    "src/main/java/de/teutonstudio/toolbeltunlimited/client/RowEyeButton.java": "418afd16bd2f200a4b21ef187a20d29a53ca82ddee49341f240cf0d6517aeff7",
+    "src/main/java/de/teutonstudio/toolbeltunlimited/mixin/BeltContainerMixin.java": "5be85b6096546af7aebf04b543fb99c475b22734d010a03cbe9f925401a1cf4a",
+    "src/main/java/de/teutonstudio/toolbeltunlimited/mixin/SlotMixin.java": "32eabf3f9a2c734a20748bfd41a846c1f3acd618dd94392b3e4af7605da8b949",
+    "src/main/java/de/teutonstudio/toolbeltunlimited/mixin/client/GenericRadialMenuMixin.java": "1a63c35ddcd6567cc01c595d5cf39fbdc609068e721f679b6f825c5cb37afe0e",
+    "src/main/java/de/teutonstudio/toolbeltunlimited/mixin/client/RadialMenuScreenMixin.java": "85999638c3e01ebb7fd3534d8b3756a6fc9035a1306140f94e53c0bd2353af39",
+    "src/main/kotlin/de/teutonstudio/toolbeltunlimited/ToolBeltUnlimited.kt": "cbac46b4716ddbd2fa43c6e80174a5f000e2806fad20df40c874f2f3db391ceb",
+    "src/main/kotlin/de/teutonstudio/toolbeltunlimited/ToolBeltUnlimitedConfig.kt": "e945ba178580b3f95cd86bf8ff128be1251f5bc28eb72f7c650ce6d35af21238",
     "src/main/kotlin/de/teutonstudio/toolbeltunlimited/mixin/ConfigDataMixin.kt": "e3681bd81e9c55742c0ddbcd8601090827980d0c7bd6e459d763e64c8070631d",
     "src/main/kotlin/de/teutonstudio/toolbeltunlimited/mixin/SewingUpgradeRecipeMixin.kt": "9b31007d35cbc861c096db229076b7e36e0f14ecfce05095fc1e213a45bfdd8a",
     "src/main/kotlin/de/teutonstudio/toolbeltunlimited/mixin/ToolBeltItemMixin.kt": "9072078a29133912371c12e5cbdfd4768841d17af15dcc5845f309e50dfde2c5",
     "src/main/kotlin/de/teutonstudio/toolbeltunlimited/recipe/InfiniteSewingUpgradeRecipe.kt": "a630dd4d163e942ed431509225526d3951510b6a6a458a7281e8a90e3fe2c11d",
     "src/main/resources/META-INF/neoforge.mods.toml": "15070c7e7bc4da25af08406fc1dec21d72fb20489613c9f94eb30736c4c8be93",
+    "src/main/resources/assets/toolbeltunlimited/lang/de_de.json": "923cec6151ce95258205b04098c28a26212e163edcbf396261c01edd6917c333",
+    "src/main/resources/assets/toolbeltunlimited/lang/en_us.json": "7ad12001a14708714e2ea580e6a00e2c8982ac2ce2745f5bd98043396e81e668",
     "src/main/resources/data/toolbeltunlimited/recipe/infinite_belt_upgrade_via_sewing.json": "b7990721e82bb746984cda2b61b28df1ef4b892dd42678431cd51ebe7b6e2787",
-    "src/main/resources/toolbeltunlimited.mixins.json": "99ec06388535828358e02d8f89a9765f937b34f5dbb8bbc69166e87f6751ae86"
-  }
+    "src/main/resources/toolbeltunlimited.mixins.json": "0785f844626091df94fa6938bfb5443e2b4847ca33cef524adfefa4a0aeb690e"
+  },
+  "reviewed_build": "local-development-build",
+  "legacy_release": {
+    "mod_version": "1.3.0",
+    "jar_sha256": "33e3839320f13e5849a1ad398857c36afa2f4b55226e9f3c1ce85f8dbe3ba9a7"
+  },
+  "local_build_jar_sha256": "07b9f1a0536dd9c2d54030a1994da2b948b21ca7f3bddc1d6c99b631ba858c84"
 }

@@ -1,0 +1,34 @@
+// ./gradlew -I devtests/ui-validation.init.gradle runClient --offline
+allprojects { p -> afterEvaluate {
+    if (p.plugins.hasPlugin('net.neoforged.moddev')) {
+        def validation = p.sourceSets.create('uiValidation')
+        validation.java.srcDir(p.file('devtests/src'))
+        validation.resources.srcDir(p.file('devtests/resources'))
+        validation.compileClasspath += p.sourceSets.main.output + p.sourceSets.main.compileClasspath
+        validation.runtimeClasspath += p.sourceSets.main.output + p.configurations.runtimeClasspath
+        p.neoForge.mods.create('toolbelt_ui_validation') { sourceSet validation }
+        p.tasks.named('runClient') {
+            dependsOn validation.classesTaskName, p.tasks.named('classes')
+            doFirst {
+                p.file('build/ui-validation-run/ui-validation-success.txt').delete()
+                def options = p.file('build/ui-validation-run/options.txt')
+                if (!options.exists()) {
+                    options.parentFile.mkdirs()
+                    options.text = 'onboardAccessibility:false\nlang:de_de\nguiScale:2\nmaxFps:60\npauseOnLostFocus:false\n'
+                }
+            }
+            doLast {
+                if (!p.file('build/ui-validation-run/ui-validation-success.txt').isFile()) {
+                    throw new GradleException('UI validation did not complete; inspect UI_VALIDATION_FAILED in the game log.')
+                }
+            }
+        }
+        p.neoForge.runs.client {
+            sourceSet = validation
+            gameDirectory = p.file('build/ui-validation-run')
+            programArguments.addAll '--width', '1280', '--height', '800'
+            if (p.hasProperty('configUiValidation')) jvmArguments.add('-Dtoolbelt.validation.config=true')
+            if (p.hasProperty('insertUiValidation')) jvmArguments.add('-Dtoolbelt.validation.insert=true')
+        }
+    }
+}}
